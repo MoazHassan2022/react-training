@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Classprops from './Classprops';
-
+import Functionalprops from './Functionalprops';
 
 class App extends Component {
   render() {
@@ -13,6 +13,7 @@ class App extends Component {
           <button>Click me</button>
         </Classprops>
         <Classprops name="people 3" place="World 3"/>
+        <Functionalprops name="people 4" place="world 4"/>
       </div>
     );
   }
