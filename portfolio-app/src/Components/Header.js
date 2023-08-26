@@ -1,9 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import "./styles/Header.scss"
 import { Close, MenuBookOutlined } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+
+    const [active, setActive] = useState(false);
+
+    const showMenu = () => {
+        setActive(!active);
+    }
+
     return (
         <div className="header">
             <div className="header__logo">
@@ -13,39 +20,39 @@ const Header = () => {
             <nav>
                 <ul>
                     <div className="closed">
-                        <Close className='close' />
+                        <Close className='close' onclick={showMenu}/>
                     </div>
 
                     <li>
                         <Link to="/">
-                            Home
+                            <b>Home</b>
                         </Link>
                     </li>
                     <li>
                         <Link to="/">
-                            About
+                        <b>About</b>
                         </Link>
                     </li>
                     <li>
                         <Link to="/">
-                            Portfolio
+                        <b>Portfolio</b>
                         </Link>
                     </li>
                     <li>
                         <Link to="/">
-                            Blog
+                        <b> Blog</b>
                         </Link>
                     </li>
                     <li>
                         <Link to="/">
-                            Contact
+                        <b> Contact</b>
                         </Link>
                     </li>
                 </ul>
             </nav>
 
             <div className="changer">
-                <MenuBookOutlined className="menu" />
+                <MenuBookOutlined className="menu" onclick={showMenu}/>
             </div>
         </div>
     )
