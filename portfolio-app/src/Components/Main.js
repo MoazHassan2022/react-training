@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles/Main.scss";
 import { Facebook, Instagram, LinkedIn, Twitter } from "@material-ui/icons";
-import moaz from "./assets/moaz.jpg"
+import img1 from "./assets/img1.jpg"
 
 const Main = () => {
     return (
@@ -30,7 +30,7 @@ const Main = () => {
                 </div>
 
                 <div className="main__img">
-                    <img src={moaz} alt=" " />
+                    <img src={img1} alt=" " />
                 </div>
             </div>
         </div>
