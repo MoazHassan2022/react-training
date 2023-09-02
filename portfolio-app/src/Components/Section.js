@@ -1,5 +1,5 @@
 import React from "react"
-//import "./styles/Section.scss"
+import "./styles/Section.scss"
 import img2 from "./assets/img2.jpg"
 
 const Section = () => {
