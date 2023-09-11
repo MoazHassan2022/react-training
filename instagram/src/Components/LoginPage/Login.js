@@ -5,7 +5,7 @@ import fb from '../../images/img1.jpg';
 import appstore from '../../images/img1.jpg';
 import playstore from '../../images/img1.jpg';
 import inst_logo from '../../images/logo.png';
-import './LoginPage.css';
+import './Login.css';
 
 class LoginPage extends Component {
 constructor(props) {
